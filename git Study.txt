@@ -14,6 +14,7 @@
       9、git init  初始化git工作区命令。
       10、git add . 将当前目录加入到暂存区。
       11、git commit -m "commit description"  将暂存区提交到本地仓库区。
-      12、本地第一次提交到仓库需要执行命令 git remote add origin git@github.com:angloy1981/StudyGit.git
-      12.1、git push -u origin master.
+      12、如需删除当前的仓库目录则执行git remote rm origin
+      12.1、本地第一次提交到仓库需要执行命令 git remote add origin git@github.com:angloy1981/StudyGit.git
+      12.2、git push -u origin master.
       13、git push 将本地仓库内容提交到远程仓库。
