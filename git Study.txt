@@ -1,0 +1,19 @@
+一、注册GitHub。
+      用户名：angloy1981
+      注册邮箱：3876166@qq.com
+
+二、添加远程仓库
+      1、由于本地Git仓库和GitHub仓库之间的传输时通过SSH加密的，所有需要配置验证信息，是同一下命令生成SSH Key. ssh-keygen -t rsa -C "3876166@qq.com"
+      2、在c:\Users\user\.ssh 文件夹下面有文件id_rsa.pub,复制里面的key
+      3、回到github上，进入Account=》Settings。
+      4、设置ssh key 输入Title（可随便输）， 然后输入刚刚复制的key。
+      5、输入命令 ssh -T git@github.com, 出现提示Hi xxxxx！ You've Successfully authenticated, ...... 表示成功连上GitHub。
+      6、在github页面上点击+号，新建仓库（仓库名称自定义）。
+      7、复制ssh下面的地址信息，例如“git@github.com:angloy1981/StudyGit.git”
+      8、在本机需要上传的目录下，进入cmd命令行界面。
+      9、git init  初始化git工作区命令。
+      10、git add . 将当前目录加入到暂存区。
+      11、git commit -m "commit description"  将暂存区提交到本地仓库区。
+      12、本地第一次提交到仓库需要执行命令 git remote add origin git@github.com:angloy1981/StudyGit.git
+      12.1、git push -u origin master.
+      13、git push 将本地仓库内容提交到远程仓库。
